@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  redis-stack:
+    image: redis/redis-stack:latest
+    # environment:
+    #   - REDIS_ARGS=--save 1200 32
+    # volumes:
+    #   - /data:/data
+    ports:
+      - 6379:6379
+      - 8001:8001 # Redshift
